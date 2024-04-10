@@ -26,7 +26,7 @@ let package = Package(
         .target(
             name: "LLM",
             dependencies: [
-                .product(name: "llama", package: "llama")
+                .product(name: "llama", package: "llama.cpp")
             ]),
         .testTarget(
             name: "LLMTests",
