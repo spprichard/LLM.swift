@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "llama.cpp",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/spprichard/llama.cpp",
-      "state" : {
-        "branch" : "C++Interop",
-        "revision" : "e56d3a7d70b3c27c318057430d9048479b5e34f6"
-      }
-    },
-    {
       "identity" : "swift-power-assert",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kishikawakatsumi/swift-power-assert",

@@ -18,14 +18,15 @@ let package = Package(
             targets: ["LLM"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/spprichard/llama.cpp", branch: "C++Interop"),
+        .package(url: "https://github.com/spprichard/llama.cpp", branch: "Server-Side-Swift-Support"),
+//        .package(name: "llama", path: "/Users/steven.prichard/Developer/Tagging Project/forks/llama.cpp"),
         .package(url: "https://github.com/kishikawakatsumi/swift-power-assert", from: "0.12.0"),
     ],
     targets: [
         .target(
             name: "LLM",
             dependencies: [
-                .product(name: "llama", package: "llama.cpp")
+                .product(name: "llama", package: "llama")
             ]),
         .testTarget(
             name: "LLMTests",
