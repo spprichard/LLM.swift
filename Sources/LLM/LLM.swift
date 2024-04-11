@@ -97,7 +97,9 @@ open class LLM: ObservableObject {
     deinit {
         print("ℹ️ @@ Deinit - LLM")
         llama_free_model(model)
-        context = nil
+        llama_backend_free()
+        llama_batch_free(batch)
+        llama_free(context.pointer)
     }
     
     public convenience init(
